@@ -1,0 +1,204 @@
+html, 
+body {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.box{
+	width: 100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow:hidden;
+}
+
+.box .back{
+	position: absolute;
+	width: 5%;
+	left: 30%;
+	top: 3%;
+	height: 94%;
+	z-index: 5;
+	/*background-color: red;*/
+}
+
+.box .next{
+	position: absolute;
+	width: 5%;
+	left: 65%;
+	top: 3%;
+	height: 94%;
+	z-index: 5;
+	/*background-color: red;*/
+}
+
+.box img{
+	position: sticky;
+	/*z-index: 9998;*/
+	width:100%;
+}
+
+.box .page1{
+	position: absolute;
+	z-index: 3;
+	width: 40%;
+	left: 30%;
+	top: 2.5%;
+	z-index: 4;
+	opacity: 0;
+	display: none;
+}
+
+.box .page2{
+	position: absolute;
+	z-index: 3;
+	width: 40%;
+	left: 30%;
+	top: 2.5%;
+	z-index: 4;
+	opacity: 0;
+	display: none;
+}
+
+.box .playc {
+	position: absolute;
+	margin-left: 54%;
+	margin-top: 27%;
+	width: 4%;
+	height: 10%;
+	/* background-color: black; */
+}
+
+.box .bgblack {
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	opacity: 0;
+	z-index: 3; 
+	height: 100%;
+	display: none;
+}
+
+.box .livro {
+	position: absolute;
+	margin-left: 14%;
+	margin-top: 52%;
+	width: 6%;
+	height: 10%;
+	/* background-color: red; */
+}
+
+.box .carol1 {
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 31%;
+	width: 10%;
+	height: 60%;
+	transform: rotate(95deg);
+	/* background-color: green; */
+}
+
+.box .eduardo {
+	position: absolute;
+	margin-left: 14%;
+	margin-top: 25%;
+	width: 8%;
+	height: 45%;
+	transform: rotate(95deg);
+	/* background-color: blue; */
+}
+
+
+.box .kyee {
+	position: absolute;
+	margin-left: 31%;
+	margin-top: 22%;
+	width: 8%;
+	height: 40%;
+	transform: rotate(115deg);
+	/* background-color: purple; */
+}
+
+.box .carol2 {
+	position: absolute;
+	margin-left: 68%;
+	margin-top: 19%;
+	width: 10%;
+	height: 35%;
+	transform: rotate(52deg);
+	/* background-color: orangered; */
+}
+
+.box .ariadne {
+	position: absolute;
+	margin-left: 77%;
+	margin-top: 18%;
+	width: 13%;
+	height: 70%;
+	transform: rotate(65deg);
+	/* background-color: yellow; */
+}
+
+.livro , .carol1 , .eduardo, .kyee, .carol2, .ariadne, .playc, .bgblack, .next, .back {
+	cursor: pointer;
+	z-index: 3;
+}
+
+.zoom-in{
+	transform-origin: 5% 100%;
+	transform: scale(1);
+	animation: zoomIn 1s ease-in-out forwards;
+}
+
+@keyframes zoomIn{
+	0%{transform:  scale(1) ;}
+	100%{transform:  scale(3) ;}
+}
+
+.zoom-out{
+	transform-origin: 5% 100%;
+	transform: scale(1);
+	animation: zoomOut 1s ease-in-out forwards;
+}
+
+.hall{
+	z-index: 2;
+}
+.hallvid {
+	position: absolute; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: 100%; 	
+	height: auto; 
+	/*z-index: 9997;*/
+	background-size: cover;
+	overflow: hidden;
+}
+
+.livro-in {
+	position: absolute !important;
+	margin-left: 31% !important;
+	margin-top: 44% !important;
+	width: 22% !important;
+	height: 23% !important;
+	z-index: 2;
+	/*z-index: 1 !important;*/
+	/* background-color: red; */
+}
+@keyframes zoomOut{
+	0%{transform:  scale(3) ;}
+	100%{transform:  scale(1) ;}
+}
+
+.zoom-index{
+	display: none;
+} 

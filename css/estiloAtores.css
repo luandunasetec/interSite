@@ -1,0 +1,166 @@
+@font-face { 
+font-family: 'Roboto';
+src: url('../font/Roboto/Roboto-Light.ttf');
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+html, 
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #f7f7f7;
+	scroll-behavior: smooth;
+	font-family: roboto;
+}
+
+h2 {
+	margin-left: 5%;
+}
+
+p {
+	margin-left: 5%;
+	text-align: justify;
+	font-size: 1.3em;
+}
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.homebutton {
+	cursor: pointer;
+}
+
+.ator1 {
+	width: 100%;
+	height: 100vh;
+}
+
+.ariadnePerfil {
+	z-index: 1;
+	position: absolute;
+	margin: 1rem;
+	width: 70%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+	transition: opacity 1s ease-in-out;
+}
+
+.ariadneBody {
+	z-index: 0;
+	position:relative;
+	margin: 1rem;
+	width: 74%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+}
+
+.carol1Perfil {
+	z-index: 1;
+	position: absolute;
+	margin: 1rem;
+	width: 70%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+	transition: opacity 1s ease-in-out;
+}
+
+.carol1Body {
+	z-index: 0;
+	position:relative;
+	margin: 1rem;
+	width: 74%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+}
+
+.carol2Perfil {
+	z-index: 1;
+	position: absolute;
+	margin: 1rem;
+	width: 70%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+	transition: opacity 1s ease-in-out;
+}
+
+.carol2Body {
+	z-index: 0;
+	position:relative;
+	margin: 1rem;
+	width: 74%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+}
+
+.eduardoPerfil {
+	z-index: 1;
+	position: absolute;
+	margin: 1rem;
+	width: 70%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+	transition: opacity 1s ease-in-out;
+}
+
+.eduardoBody {
+	z-index: 0;
+	position:relative;
+	margin: 1rem;
+	width: 74%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+}
+
+.kyeePerfil {
+	z-index: 1;
+	position: absolute;
+	margin: 1rem;
+	width: 70%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+	transition: opacity 1s ease-in-out;
+}
+
+.kyeeBody {
+	z-index: 0;
+	position:relative;
+	margin: 1rem;
+	width: 74%;
+	height: auto;
+	box-shadow: 4px 7px 20px -15px rgba(0,0,0,0.75);
+}
+
+.ariadnePerfil:hover, 
+.carol1Perfil:hover,
+.carol2Perfil:hover,
+.eduardoPerfil:hover,
+.kyeePerfil:hover {
+	opacity: 0;
+}
+
+
+img{
+	float: left;
+}
+.homebutton{
+	z-index: 2;
+	position: fixed;
+}
+.abutton{
+	padding-top: 1rem;
+	padding-right: 3rem;
+	float: right;
+}
+.buttonclose{
+	width: 100%;
+	height: 10vh;
+}
+.descariadne{
+	width: 100%;
+	height: 100%;
+}
