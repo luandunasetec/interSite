@@ -1,3 +1,8 @@
+@font-face { 
+font-family: 'Roboto';
+src: url('../font/Roboto/Roboto-Light.ttf');
+}
+
 html, 
 body {
 	height: 100vh;
@@ -7,6 +12,7 @@ body {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	font-family: roboto;
 }
 .nopadding {
 	padding: 0 !important;
