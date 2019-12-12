@@ -232,6 +232,7 @@ tippy('.playc', {
 	maxWidth: '10rem',
 	delay: [0, 0],
 });
+console.log(`01 = Grupo Luma\n02 = Grupo Larissa\n03 = Grupo Lucas Oliveira\n04 = Grupo Colares\n05 = Grupo Michelle`);
 
 
 
