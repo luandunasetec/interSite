@@ -11,7 +11,7 @@ function shuffle(arr) {
 	return arr;
 };
 
-var arrMonstros = ['./img/monstros/01.png', './img/monstros/02.png']
+var arrMonstros = ['./img/monstros/01.png', './img/monstros/02.png', './img/monstros/03.png', './img/monstros/04.png', './img/monstros/05.png', './img/monstros/06.png']
 var array = ['./vids/curtas/01.mp4', './vids/curtas/02.mp4', './vids/curtas/03.mp4', './vids/curtas/04.mp4', './vids/curtas/05.mp4']
 var vids = shuffle(array)
 console.log(vids);
@@ -84,12 +84,24 @@ $(".playc").click(function () {
 });
 
 $(".next").click(function () {
-	if (i < arrMonstros.length-1){
+	if (i < arrMonstros.length-1 && $('.page2').css('opacity') == 0){
 		i++;
-		$('.page2').attr('src', arrMonstros[i]);
 		$('.page2').css('display', 'block');
+		$('.page2').attr('src', arrMonstros[i]);
 		$('.page1').animate({ opacity: 0 });
 		$('.page2').animate({ opacity: 1 });
+		$('.back').removeClass('zoom-index');
+		turnPage.play();
+		if(i >= arrMonstros.length-1){
+			$('.next').addClass('zoom-index');
+		}
+	}
+	if (i < arrMonstros.length-1 && $('.page2').css('opacity') == 1){
+		i++;
+		$('.page1').css('display', 'block');
+		$('.page1').attr('src', arrMonstros[i]);
+		$('.page2').animate({ opacity: 0 });
+		$('.page1').animate({ opacity: 1 });
 		$('.back').removeClass('zoom-index');
 		turnPage.play();
 		if(i >= arrMonstros.length-1){
@@ -99,17 +111,24 @@ $(".next").click(function () {
 });
 
 $(".back").click(function () {
-	if (i <= arrMonstros.length-1){
+	if (i <= arrMonstros.length-1 && $('.page1').css('opacity') == 0){
 		i--;
 		$('.page1').attr('src', arrMonstros[i]);
 		$('.page1').animate({ opacity: 1 });
 		$('.page2').animate({ opacity: 0 });
-		$('.back').addClass('zoom-index');
-		setTimeout(function () {
-			$('.page2').css('display', 'none');
-		}, 500);
 		turnPage.play();
 		$('.next').removeClass('zoom-index');
+	}
+	if (i <= arrMonstros.length-1 && $('.page1').css('opacity') == 1){
+		i--;
+		$('.page2').attr('src', arrMonstros[i]);
+		$('.page2').animate({ opacity: 1 });
+		$('.page1').animate({ opacity: 0 });
+		turnPage.play();
+		$('.next').removeClass('zoom-index');
+	}
+	if(i == 0){
+		$('.back').addClass('zoom-index');
 	}
 });
 
